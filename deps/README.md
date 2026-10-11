@@ -12,6 +12,9 @@
 | `control-tower` | `deps/control-tower` | 总控/方法论 | 读路由表/跨仓纪律/五层现状（唯一权威源） |
 | `pipeline` | `deps/pipeline` | ① 采集底座 | 取知识成品/素材（产物对接） |
 | `video-studio` | `deps/video-studio` | ④ 生产执行 | 取成片/方案图（产物对接） |
+| `wechat-moments` | `deps/wechat-moments` | 朋友圈线（**私有**） | 亦仁观点/工作台系列的私域朋友圈内容，与珠宝线并行 |
+
+> ⚠️ `wechat-moments` 是**私有**子模块：本仓（公有）只存指针，内容在私有仓 `byte886/wechat-moments`。第三方 clone 本仓时该子模块拉不到（需权限），属预期；自己使用不受影响。
 
 ## 使用方式
 

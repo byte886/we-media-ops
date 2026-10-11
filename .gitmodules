@@ -10,3 +10,6 @@
 [submodule "deps/pipeline"]
 	path = deps/pipeline
 	url = git@github.com:byte886/content-pipeline.git
+[submodule "deps/wechat-moments"]
+	path = deps/wechat-moments
+	url = git@github.com:byte886/wechat-moments.git
