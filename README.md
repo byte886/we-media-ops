@@ -2,6 +2,19 @@
 
 > 自媒体运营知识库与发布素材库。不限行业，框架可复用。
 
+## 文档边界（各文档负责什么）
+
+| 维度 | 本文档（README.md） | 其他文档 |
+|------|---------------------|----------|
+| **定位** | 项目概览，给人看的目录+常用操作 | - |
+| **不包含** | AI执行规则、命令、Things to Avoid | → [AGENTS.md](AGENTS.md) |
+| **不包含** | 项目章程、体系格局 | → [总纲.md](总纲.md) |
+| **不包含** | 详细操作流程、各环节步骤 | → [docs/WORKFLOW.md](docs/WORKFLOW.md) |
+| **不包含** | 需求定义、验收标准 | → [docs/REQUIREMENTS.md](docs/REQUIREMENTS.md) |
+| **不包含** | 文档索引、所有文档清单 | → [docs/DOCUMENTATION_MAP.md](docs/DOCUMENTATION_MAP.md) |
+| **不包含** | 当前任务进度 | → [TASK_STATUS.md](TASK_STATUS.md) |
+| **不包含** | 待解决问题 | → [ISSUES.md](ISSUES.md) |
+
 ## 仓库地址
 
 - GitHub: https://github.com/byte886/we-media-ops （公有）
@@ -36,7 +49,10 @@ we-media-ops/
 │
 ├── projects/                  # 内容线（每线一目录）
 │   ├── jewelry/               # 内容线1：琛盛堂翡翠（襄阳）—— 当前主线
-│   │   ├── knowledge-base/    # 运营知识库（泉泉宝典 + 素材）
+│   │   ├── knowledge-base/    # 运营知识库（泉泉宝典 + 运营方法库 + 素材）
+│   │   │   ├── 运营方法库/    #   日常主用：选题池/脚本框架/合规速查/对标/复盘（七件套）
+│   │   │   ├── 泉泉珠宝资料宝典/ # 泉泉原始资料（素材源，不修改）
+│   │   │   └── 产品素材/      #   产品图 + 供应商样品
 │   │   ├── research/          # 调研档案（三平台规则 + 案例 + AI 内容调研）
 │   │   ├── platforms/         # 平台执行（D1-D7 脚本 + 三平台子目录）
 │   │   │   ├── shipinhao/     #   视频号
