@@ -19,12 +19,20 @@
 # 首次 clone we-media-ops 后，初始化所有子模块
 git submodule update --init --recursive
 
-# 每次工作前拉最新（情报以最新为准）
-git submodule update --remote --merge
-
-# 更新后本仓会显示子模块指针变化，提交：
-git add deps/ && git commit -m "chore: 同步子模块指针"
+# 需要读某子模块最新时，按需拉取该子模块（不盲目全量 --remote）：
+#   git -C deps/<仓> fetch && git -C deps/<仓> checkout <目标commit>
+# 确认无误后回到父仓只暂存该 gitlink：
+#   git add deps/<仓> && git commit -m "chore: 同步 deps/<仓> 指针"
 ```
+
+## 子模块按需更新 + 验证约定（2026-10-12 拍板）
+
+- **不做全量 `git submodule update --remote`**：各仓节奏不同，全量拉易带入未审阅的代码/数据变更；改为**用到哪个、拉哪个**。
+- **更新前先判定风险**：先 `git -C deps/<仓> fetch` + `git diff --stat <旧>..origin/HEAD` 看待更新提交改了什么。
+  - **纯文档仓**（如 `control-tower`，改动全是 .md、无代码/配置/密钥）→ 低风险，可直接更新指针。
+  - **含代码/数据仓**（如 `pipeline` 采集底座、`video-studio` 生产、`trend-radar` 监控配置）→ 滞后不擅自追，列入待办由用户拍板后再更新。
+- **更新后必验证**：父仓只 `git add deps/<仓>` 该 gitlink（不连带暂存其它），`git diff --cached --submodule=log` 核对提交信息，确认无夹带再提交。
+- **情报类以最新为准**的旧口径保留：仅当确实要读最新情报/路由表时，才拉对应子模块；日常引用按已锁定指针即可。
 
 ## 纪律
 

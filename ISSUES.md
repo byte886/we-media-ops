@@ -17,6 +17,8 @@
 
 ## 一、待验证假设（来自 memory / 踩坑记录）
 
+> 以下 I-001~I-003 均为**业务效果侧假设**，不阻塞当前内容生产，但需**待首次发布后按真实数据实测闭环**，不靠文档推断。
+
 | ID | 项 | 状态 | 来源 / 备注 |
 |----|----|------|------|
 | I-001 | AI 生成珠宝视频的商业可用性：火彩/反光/佩戴比例不准，目前只适合氛围片、不适合产品展示 | 待验证 | [memory/index.md](docs/project-management/memory/index.md) + [standards/踩坑记录.md](docs/project-management/standards/踩坑记录.md)；对照 video-studio 三档流水线后拍板 |
@@ -37,7 +39,7 @@
 
 | ID | 项 | 状态 | 备注 |
 |----|----|------|------|
-| I-007 | `scripts/scan_xhs.js`（扫描）、`scripts/human_browse_xhs.js`（人味养号浏览） | 待核实 | 两脚本均 puppeteer-core attach 到本机已开 Chrome（读 `DevToolsActivePort`），依赖 Chrome 以远程调试模式启动；本仓无 package.json / scripts/README，"养号"是否已跑通待用户确认 |
+| I-007 | `scripts/scan_xhs.js`（扫描）、`scripts/human_browse_xhs.js`（人味养号浏览） | 待用户本机实测 | 两脚本均 puppeteer-core attach 到本机已开 Chrome（读 `DevToolsActivePort`），依赖 Chrome 以远程调试模式启动；本仓无 package.json / scripts README，"养号"是否已跑通待用户在本机实测确认，不代为判定 |
 
 ## 四、账号与合规
 
