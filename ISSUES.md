@@ -25,13 +25,13 @@
 
 ## 二、文档路径漂移（2026-10-08 结构重构后旧引用未改）
 
-> 重构把知识库/research/archive 整体搬到 `projects/jewelry/`、治理档案落 `docs/project-management/`，但下列文件里的旧路径尚未同步修正。**本次只对齐了 README 目录树，其余文件下一轮修。**
+> 重构把知识库/research/archive 整体搬到 `projects/jewelry/`、治理档案落 `docs/project-management/`。下列旧路径已于 **2026-10-12 旁观者评审本轮全部修指闭环**。
 
 | ID | 位置 | 问题 | 状态 |
 |----|------|------|------|
-| I-004 | [docs/WORKFLOW.md](docs/WORKFLOW.md) | 多处旧路径：`docs/execution/jewelry/`（实际 `projects/jewelry/platforms/`）、`knowledge-base/...`（实际 `projects/jewelry/knowledge-base/...`）、`docs/research/...`（实际 `projects/jewelry/research/...`）、`project-management/ISSUES.md`（本次已挪根目录）、`knowledge-base/朋友圈_*`（朋友圈线已迁出本仓） | 待修 |
-| I-005 | [docs/project-management/memory/index.md](docs/project-management/memory/index.md) | 链接写 `docs/decisions/ADR-001...`，实际在 `docs/project-management/decisions/` | 待修 |
-| I-006 | [docs/DOCUMENTATION_MAP.md](docs/DOCUMENTATION_MAP.md)、[AGENTS.md](AGENTS.md) | 仍引用 `project-management/TASK_STATUS.md|ISSUES.md`（本次已挪根目录）、`docs/research/`、`docs/AI内容调研/`、顶层 `knowledge-base/` 等旧路径 | 待修 |
+| I-004 | [docs/WORKFLOW.md](docs/WORKFLOW.md) | 多处旧路径：`knowledge-base/...`、`docs/research/...`、`project-management/ISSUES.md` | ✅ 已修复（2026-10-12）：全部改指 `projects/jewelry/...` 与根 `ISSUES.md` |
+| I-005 | [docs/project-management/memory/index.md](docs/project-management/memory/index.md) | 链接写 `docs/decisions/ADR-001...`，实际在 `docs/project-management/decisions/` | ✅ 已修复（2026-10-12）：改指 `docs/project-management/decisions/`，并补登珠宝线 ADR-003/004/005 |
+| I-006 | [docs/DOCUMENTATION_MAP.md](docs/DOCUMENTATION_MAP.md)、[AGENTS.md](AGENTS.md) | 仍引用 `project-management/TASK_STATUS.md|ISSUES.md`、`docs/research/`、顶层 `knowledge-base/` 等旧路径 | ✅ 已修复：MAP 于 19c7f1f 重写；本轮 AGENTS 冷启动路径/目录树/命令全部对齐现行结构 |
 
 ## 三、脚本与工具状态
 
@@ -52,7 +52,7 @@
 | ID | 问题 | 解决时间 | 结果 |
 |----|------|----------|------|
 | — | 配图路线不清（黑底卡到底给谁用） | 已闭环 | [standards/踩坑记录.md](docs/project-management/standards/踩坑记录.md) 标 [x]：朋友圈黑底卡、小红书明亮底、抖音举纸怼镜头 |
-| — | 朋友圈 AI 工作台线与珠宝线人设混淆 | 已闭环 | 朋友圈系列 2026-10-08 迁出本仓，独立为 `pengyouquan` 仓（commit `5bdf6f9`）；本仓只做珠宝 |
+| — | 朋友圈 AI 工作台线与珠宝线人设混淆 | 已闭环 | 两线人设/语气/平台/目标完全分开（见 WORKFLOW 内容线表）；朋友圈线 2026-10-11 经三迁归位本仓 `projects/wechat-moments/`，与珠宝线并存、互不混写 |
 
 ---
 

@@ -42,7 +42,7 @@ we-media-ops/
 │   │   ├── AI味检查SOP.md
 │   │   └── 朋友圈写作SOP.md
 │   └── project-management/    # 治理档案
-│       ├── decisions/         # ADR 决策记录（001~005）
+│       ├── decisions/         # ADR 决策记录（001~006）
 │       ├── memory/            # 跨会话稳定结论（index + repo-map）
 │       ├── standards/         # 规范（合规 / 不AI化 / 踩坑记录）
 │       └── templates/         # 模板（每日脚本模板）

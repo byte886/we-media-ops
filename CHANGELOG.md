@@ -3,6 +3,16 @@
 > 格式：`YYYY-MM-DD ［类型］一句话（影响/依据）`；类型 = 新增/变更/修复/废弃/移除。
 > 所有显著变更在此记一条；活态进度看 [TASK_STATUS.md](TASK_STATUS.md)，问题看 [ISSUES.md](ISSUES.md)。
 
+## 2026-10-12
+
+- ［修复］旁观者评审治理修正（本轮）：AGENTS 冷启动路径/§3 目录树/§5 命令全部对齐现行结构（旧 `docs/memory/`、`project-management/TASK_STATUS|ISSUES`、顶层 `knowledge-base/`、`concepts/` 已废）；WORKFLOW 旧路径改指 `projects/jewelry/...` 与根 `ISSUES.md`；memory/index ADR 链接改指 `docs/project-management/decisions/` 并补登珠宝线 ADR-003/004/005；TASK_STATUS/ISSUES 台账对齐 git 历史（朋友圈两线并存、ADR 范围 001~006）；README decisions 计数改 001~006；总纲 research-toolkit 括注更正为全局技能；出《旁观者评审报告_2026-10-12》。
+- ［新增］ADR-006《泉泉方法论吸收范围与赛道取舍》（`db5ab14`）；运营方法库七件套 01~08 + D1-D7 按泉泉框架增强（`33e4a9f`）；泉泉方法论深度梳理 + 运营自动化与知识库融合方案（`5e49f77`）。
+- ［变更］README 完整目录树重写（两条内容线 + deps 子模块 + 组织逻辑，`078ac03`）；DOCUMENTATION_MAP 按仓库根基准重写、补运营方法库/融合方案索引，README 补"文档边界"表，出质量检查报告（`19c7f1f`）。
+
+## 2026-10-11
+
+- ［变更］朋友圈 AI 工作台线三迁归位本仓：外部仓 `wechat-moments`（`5d50838`）→ 挂 deps 私有子模块（`89f7e29`）→ 并入本仓 `projects/wechat-moments/` 并移除子模块（`79f03b7`），与珠宝线两线并存；总纲补"五层体系 + 总控仓格局表"。
+
 ## 2026-10-09
 
 - ［新增］挂载体系子模块聚合 `deps/`（用户拍板"直接用 submodule"）：trend-radar（③ 情报雷达）/ control-tower（总控）/ pipeline（① 采集底座）/ video-studio（④ 生产执行）以 git submodule 纳入本仓，实现驱动方单一工作区；`deps/README.md` 记录清单/使用/纪律（情报以最新为准 → 使用前 `submodule update --remote --merge`）。
@@ -25,3 +35,4 @@
 - ［变更］旧版方案归档：24 个历史执行方案 + 旧版 PDF/Word 移入 `projects/jewelry/archive/`（不删）。
 - ［变更］朋友圈 AI 工作台系列迁出本仓，独立为 `pengyouquan` 仓（commit `5bdf6f9`）；本仓聚焦珠宝冷启动。
 - ［变更］`docs/SYSTEM_STRATEGY.md` 重写挂五仓体系，明确当前只做珠宝冷启动、框架可复用。
+- ［变更］仓名 `self-media-ops → we-media-ops`（`d31af1b`，英文原生词源同步，含 README/AGENTS/repo-map/调研报告路径）；调研渠道清单方法论说明改为 research-toolkit 技能（`8e98e45`）。

@@ -12,7 +12,7 @@
 - 问题/坑/待验证登记在 [ISSUES.md](ISSUES.md)；编年变更记在 [CHANGELOG.md](CHANGELOG.md)；本文件只做指针。
 - 冷启动/续接必读顺序见 [AGENTS.md](AGENTS.md) §2。
 
-> 最后更新：**2026-10-08（本次治理补全：建本台账 + ISSUES + CHANGELOG，README 目录树对齐实际结构）**。
+> 最后更新：**2026-10-12（本轮治理修正：AGENTS/WORKFLOW/memory 旧路径改指、台账与 CHANGELOG 对齐 git 历史）**。
 > **当前主线＝琛盛堂翡翠（襄阳）珠宝冷启动第 1 周（2026-10 起）**：三平台（视频号 > 小红书 > 抖音）获客引流。D1-D7 内容包已起草（草稿自标"待优化"），**尚未按平台拆分产出、未拍素材、未发布**；[REQUIREMENTS.md](docs/REQUIREMENTS.md) 验收 10 项全部未勾。
 
 ## 全局里程碑
@@ -22,11 +22,11 @@
 | 五仓体系定位 + 总纲 | ✅ 完成 | [总纲.md](总纲.md) 五仓速查；本仓=运营分发层 |
 | 项目结构重构（框架留 docs/，珠宝内容落 projects/jewelry/） | ✅ 完成 | 2026-10-08，见 CHANGELOG；AGENTS/总纲同步 |
 | 治理档案四件套（WORKFLOW/REQUIREMENTS/DOCUMENTATION_MAP/standards/templates） | ✅ 完成 | [docs/WORKFLOW.md](docs/WORKFLOW.md)、[docs/REQUIREMENTS.md](docs/REQUIREMENTS.md) |
-| 决策记录 ADR-001~005 | ✅ 完成 | [docs/project-management/decisions/](docs/project-management/decisions/)；003 珠宝人设 / 004 不出镜形式 / 005 三平台优先级均已确认 |
+| 决策记录 ADR-001~006 | ✅ 完成 | [docs/project-management/decisions/](docs/project-management/decisions/)；003 珠宝人设 / 004 不出镜形式 / 005 三平台优先级 / 006 泉泉方法论吸收范围与赛道取舍均已确认 |
 | 知识库归档（合并版 + 泉泉宝典 + 产品素材） | ✅ 完成 | `projects/jewelry/knowledge-base/` |
 | 调研档案归档（三平台规则/案例/AI 内容调研） | ✅ 完成 | `projects/jewelry/research/`（含 `线上优先/`） |
 | 旧版方案归档（24 个历史方案 + PDF/Word） | ✅ 完成 | `projects/jewelry/archive/`（不删） |
-| 朋友圈 AI 工作台线迁出 | ✅ 完成 | 独立为 `pengyouquan` 仓（commit `5bdf6f9`），本仓只留珠宝 |
+| 朋友圈 AI 工作台线归位本仓 | ✅ 完成 | 历经"迁出独立仓→挂 deps 子模块→并入本仓"三迁，2026-10-11（commit `79f03b7`）落定 `projects/wechat-moments/`，与珠宝线两线并存 |
 | 治理三件套（本文件 + ISSUES + CHANGELOG） | ✅ 完成 | 2026-10-08 本次补全 |
 | D1-D7 第一周内容包（脚本草稿） | 🔄 草稿完成 / ⏳ 未发布 | `projects/jewelry/platforms/D1-D7_珠宝冷启动第一周.md`（D1~D7 七天齐，自标"待优化"）；三平台产出目录 `platforms/{shipinhao,xiaohongshu,douyin}/` 仍空 |
 | 拍摄 + 三平台实际发布（D1 起） | ⏳ 未开始 | REQUIREMENTS 发布/账号安全验收全未勾 |

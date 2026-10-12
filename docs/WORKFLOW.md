@@ -31,9 +31,9 @@
 ### ① 选题（从哪里找题目）
 
 **先读：**
-- `knowledge-base/珠宝小红书运营知识库_合并版.md` §三（内容创作框架）、§六（高转化内容方向）
-- `knowledge-base/泉泉珠宝资料宝典/06_珠宝小红书200个爆款标题.md`（200个标题参考）
-- `docs/research/小红书实地调研_珠宝小号_2026-10-07.md`（同行账号在发什么）
+- `projects/jewelry/knowledge-base/珠宝小红书运营知识库_合并版.md` §三（内容创作框架）、§六（高转化内容方向）
+- `projects/jewelry/knowledge-base/泉泉珠宝资料宝典/06_珠宝小红书200个爆款标题.md`（200个标题参考）
+- `projects/jewelry/research/小红书实地调研_珠宝小号_2026-10-07.md`（同行账号在发什么）
 
 **选题配比（每周）：**
 - 干货攻略35%：种水怎么看、怎么选、怎么避坑
@@ -45,7 +45,7 @@
 ### ② 写脚本（按平台写不同版本）
 
 **先读：**
-- `knowledge-base/泉泉珠宝资料宝典/09_珠宝小红书账号高完播率视频框架.md`（黄金3秒、结尾引导）
+- `projects/jewelry/knowledge-base/泉泉珠宝资料宝典/09_珠宝小红书账号高完播率视频框架.md`（黄金3秒、结尾引导）
 - `docs/project-management/templates/每日脚本模板.md`
 
 **三个平台写三个版本：**
@@ -62,7 +62,7 @@
 - 每个产品拍3个镜头：整体转一圈、手电打灯看内部、戴手腕效果
 - 一次拍5-8个产品，够一周发
 
-**素材存放：** `knowledge-base/产品素材/`
+**素材存放：** `projects/jewelry/knowledge-base/产品素材/`
 
 ### ④ 剪辑/配图
 
@@ -72,8 +72,8 @@
 
 ### ⑤ 合规检查（发布前必过）
 
-**先读：** `knowledge-base/泉泉珠宝资料宝典/04_珠宝行业合规话术手册.md`
-和 `knowledge-base/珠宝小红书运营知识库_合并版.md` §四
+**先读：** `projects/jewelry/knowledge-base/泉泉珠宝资料宝典/04_珠宝行业合规话术手册.md`
+和 `projects/jewelry/knowledge-base/珠宝小红书运营知识库_合并版.md` §四
 
 **红线速查：**
 - ❌ 不说"保值升值""10年翻10倍"
@@ -108,13 +108,13 @@
 
 ### ⑧ 复盘（每周一次）
 
-**先读：** `knowledge-base/泉泉珠宝资料宝典/13_珠宝小红书账号运营复盘表_工具表.md`
+**先读：** `projects/jewelry/knowledge-base/泉泉珠宝资料宝典/13_珠宝小红书账号运营复盘表_工具表.md`
 
 每周日看数据：
 - 哪篇收藏率>5%→下周追投薯条75元
 - 哪条5秒完播率>30%→挑5条投DOU+
 - 哪篇数据差→分析原因，下周调整
-- 记录到 `project-management/ISSUES.md`
+- 记录到根目录 `ISSUES.md`
 
 ---
 
